@@ -293,7 +293,7 @@ section {
 }
 
 /* ---------- 5. Header & Navigation ---------- */
-header {
+#header {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 60;
@@ -303,7 +303,7 @@ header {
   transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
-header.scrolled {
+#header.scrolled {
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -327,7 +327,7 @@ header.scrolled {
   transition: color 0.25s ease;
 }
 
-header.scrolled .brand {
+#header.scrolled .brand {
   color: var(--ink);
 }
 
@@ -373,7 +373,7 @@ header.scrolled .brand {
   transition: background 0.2s, color 0.2s;
 }
 
-header.scrolled .nav-links a {
+#header.scrolled .nav-links a {
   color: var(--ink);
 }
 
@@ -381,7 +381,7 @@ header.scrolled .nav-links a {
   background: rgba(255, 255, 255, 0.16);
 }
 
-header.scrolled .nav-links a:hover {
+#header.scrolled .nav-links a:hover {
   background: color-mix(in srgb, var(--green) 12%, transparent);
 }
 
@@ -401,11 +401,11 @@ header.scrolled .nav-links a:hover {
   background: var(--gold);
 }
 
-header.scrolled .nav-links a.active {
+#header.scrolled .nav-links a.active {
   color: var(--green);
 }
 
-header.scrolled .nav-links a.active::after {
+#header.scrolled .nav-links a.active::after {
   background: var(--green);
 }
 
@@ -424,7 +424,7 @@ header.scrolled .nav-links a.active::after {
   transition: background 0.2s, border-color 0.2s;
 }
 
-header.scrolled .burger {
+#header.scrolled .burger {
   background: transparent;
   border-color: var(--line);
 }
@@ -434,7 +434,7 @@ header.scrolled .burger {
   transition: transform 0.28s var(--ease);
 }
 
-header.scrolled .burger svg {
+#header.scrolled .burger svg {
   stroke: var(--ink);
 }
 
@@ -2160,7 +2160,7 @@ footer a:hover {
 }
 
 @media print {
-  header,
+  #header,
   .wa-float,
   .to-top,
   .mobile-menu,
